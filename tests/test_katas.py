@@ -4,7 +4,10 @@ import katas
 
 class TestKatas(unittest.TestCase):
     def test_add(self):
-        self.fail("TODO: Write add unit test")
+        add = self.module.add
+        self.assertEqual(add(2, 1), 3)
+        self.assertEqual(add(-5, 3), -2)
+        self.assertEqual(add(105,15), 130)
 
     def test_multiply(self):
         self.fail("TODO: Write multiply unit test")
